@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_centerInParent="true">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8sp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_orange_dark"
+                android:text="@string/decrement_increment"/>
+
+        <LinearLayout
+                android:id="@+id/section1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/minBT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/minus"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:id="@+id/angkaTV"
+                    android:gravity="center"
+                    android:textSize="180sp"
+                    android:text="@string/zero"
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+
+            <Button
+                    android:id="@+id/plusBT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/plus"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/resetBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_dark"
+                android:text="@string/reset"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

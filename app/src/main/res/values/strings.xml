@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Workshop Kotlin</string>
+    <string name="reset">RESET</string>
+    <string name="plus">+</string>
+    <string name="zero">0</string>
+    <string name="minus">-</string>
+    <string name="increment_decrement">Increment Decrement</string>
+    <string name="decrement_increment">Decrement Increment</string>
+</resources>
